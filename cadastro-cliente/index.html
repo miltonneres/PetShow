@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petshow</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><em><u>Cadastro Pets Cliente:</u></em></h1>
+  </header>
+  <form id="cadastroPetForm">
+    <section>
+      <div>
+        <img src="./foto.png" alt="fotodog">
+      </div>
+      <div>
+
+        <p>Nome do seu Pet:
+          <br> <input type="text" name="txtnome" id="txtnome">
+        </p>
+        <p>Nome do Papai / Mamãe: <input type="textprop" name="txtprop" id="txtprop"></p>
+
+      </div>
+
+      <div>
+        <!--Raça: <input type="text" raca="txtraca" id="txtraca">-->
+        <p><label for="dog-breed">Qual a raça:</label><br>
+          <input list="dog-breeds" id="dog-breed" name="dog-breed" placeholder="Selecione uma raça">
+
+          <datalist id="dog-breeds">
+            <option value="Labrador Retriever">
+            <option value="Pastor Alemão">
+            <option value="Golden Retriever">
+            <option value="Bulldog Francês">
+            <option value="Poodle">
+            <option value="Beagle">
+            <option value="Rottweiler">
+            <option value="Yorkshire Terrier">
+            <option value="Dachshund">
+            <option value="Shih Tzu">
+            <option value="Boxer">
+            <option value="Chihuahua">
+            <option value="Bulldog Inglês">
+            <option value="Pug">
+            <option value="Doberman">
+            <option value="Border Collie">
+            <option value="Schnauzer">
+          </datalist>
+        </p>
+      </div>
+      <div>
+        <p>Sexo: <input type="radio" name="radsex" id="mach" checked>
+          <label for="mach">Macho</label>
+          <input type="radio" name="radsex" id="fem" checked>
+          <label for="fem">Fêmea</label>
+        </p>
+      </div>
+      <br>
+      <div>
+        Endereço: <br>
+        <p></p><input type="text" name="rua" placeholder="Rua, Avenida, etc." required>
+        <input type="number" name="numero" placeholder="Número" required>
+        <p></p><input type="text" name="bairro" placeholder="Bairro" required>
+        <input type="text" name="cidade" placeholder="Cidade" required>
+      </div>
+      <div>
+        <p><label for="servico">Escolha um serviço:</label>
+          <input list="servicos" id="servico" name="servico">
+          <datalist id="servicos">
+            <option value="Banho">
+            <option value="Tosa">
+            <option value="Vacinação">
+            <option value="Hospedagem">
+            <option value="Adestramento">
+          </datalist>
+        </p>
+        <div>
+          <p>Telefone:<input type="tel" name="Telefone" id="telefone"></p>
+        </div>
+      </div>
+      <div>
+
+        <button type="submit" class="btn btn-outline-success">Cadastrar!</button>
+      </div>
+    </section>
+  </form>
+</body>
+<footer>
+
+  <script src="./index.js"></script>
+  <p>&copy;PetShow</p>
+</footer>
+
+</html>

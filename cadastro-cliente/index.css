@@ -1,0 +1,45 @@
+body {
+  background-color: #C7E9B0;
+  font: italic 12pt Arial;
+
+}
+
+img {
+  width: 50%;
+  float: right;
+
+}
+
+header {
+  color: #0B8494;
+  text-align: center;
+}
+
+section {
+  background: #D5ED9F;
+  border-radius: 20px;
+  padding: 15px;
+  width: 400px;
+  margin: auto;
+  box-shadow: 5px 5px 10px #0B8494d8;
+}
+
+footer {
+  color: #0B8494;
+  text-align: center;
+  font-style: italic;
+
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: #0B8494d8;
+  border-radius: 10px;
+  margin: 0;
+
+
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #0B8494d8;
+}
